@@ -25,7 +25,7 @@ SECRET_KEY = '@b7!z-t_!$!l=wf)pnv=fh76*2#a$t+u$#8m$jcm2*)33x6jag'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nazarenkiuk2019.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'nazarenkiuk2019.pythonanywhere.com']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -103,10 +104,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
-
 USE_I18N = True
 
 USE_L10N = True
@@ -120,21 +117,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 TIME_ZONE = 'Europe/Moscow'
 LANGUAGE_CODE = 'ru-ru'
-STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-ALLOWED_HOSTS = ['127.0.0.1', '<NazarenkiUK2019>.pythonanywhere.com']
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
-]
+
